@@ -1,5 +1,5 @@
 
-# SQUACAPI_PASSWD=copro5-pYjxys-nokreh
+# SQUACAPI_PASSWD=c
 # SQUACAPI_USER=ahutko@uw.edu
 
 wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.12.0-Linux-x86_64.sh .
