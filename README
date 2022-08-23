@@ -1,0 +1,30 @@
+
+# SQUACAPI_PASSWD=copro5-pYjxys-nokreh
+# SQUACAPI_USER=ahutko@uw.edu
+
+wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.12.0-Linux-x86_64.sh .
+
+miniconda update -n base -c defaults conda
+
+miniconda create --name aws python==3.7.11 pytz matplotlib numpy obspy
+
+source /home/ahutko/miniconda3/etc/profile.d/conda.sh
+
+miniconda init bash
+
+conda activate aws
+
+pip install git+https://github.com/pnsn/squacapi_client@v1.0
+#pip install git+https://github.com/pnsn/squacapi_client@v2.0.1
+
+mkdir LOGFILES
+
+update python path in .py files
+
+./test_squacapi.py
+
+./calculate_station_metrics.PNSN.test.csh
+
+# 15 * * * * bash -c 'source ~/.bashrc; /home/seis/STATION_METRICS/calculate_station_metrics.SCEDC.1.csh > /home/seis/STATION_METRICS/log.calculate_station_metrics.SCEDC.1.csh'
+
+

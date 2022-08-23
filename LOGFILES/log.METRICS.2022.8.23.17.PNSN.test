@@ -1,0 +1,47 @@
+https://squacapi.pnsn.org
+SQUAC client:  <squacapi_client.api.v1_0_api.V10Api object at 0x7ff0f34c9450>
+Starttime: 2022-08-23 17:00:00
+Installed new opener with handlers: [<obspy.clients.fdsn.client.CustomRedirectHandler object at 0x7ff0f3770910>]
+Base URL: http://service.iris.edu
+Request Headers: {'User-Agent': 'ObsPy/1.3.0 (Linux-5.13.0-48-generic-x86_64-with-debian-bullseye-sid, Python 3.7.11)'}
+Downloading http://service.iris.edu/fdsnws/dataselect/1/application.wadl with requesting gzip compression
+Downloading http://service.iris.edu/fdsnws/event/1/application.wadl with requesting gzip compression
+Downloading http://service.iris.edu/fdsnws/station/1/application.wadl with requesting gzip compression
+Downloading http://service.iris.edu/fdsnws/event/1/catalogs with requesting gzip compression
+Downloading http://service.iris.edu/fdsnws/event/1/contributors with requesting gzip compression
+Downloaded http://service.iris.edu/fdsnws/event/1/catalogs with HTTP code: 200
+Uncompressing gzipped response for http://service.iris.edu/fdsnws/event/1/contributors
+Downloaded http://service.iris.edu/fdsnws/event/1/contributors with HTTP code: 200
+Uncompressing gzipped response for http://service.iris.edu/fdsnws/dataselect/1/application.wadl
+Downloaded http://service.iris.edu/fdsnws/dataselect/1/application.wadl with HTTP code: 200
+Uncompressing gzipped response for http://service.iris.edu/fdsnws/station/1/application.wadl
+Downloaded http://service.iris.edu/fdsnws/station/1/application.wadl with HTTP code: 200
+Uncompressing gzipped response for http://service.iris.edu/fdsnws/event/1/application.wadl
+Downloaded http://service.iris.edu/fdsnws/event/1/application.wadl with HTTP code: 200
+Discovered dataselect service
+Discovered station service
+Discovered event service
+Storing discovered services in cache.
+BULK [('UW', 'DONK', '--', 'ENZ', UTCDateTime(2022, 8, 23, 16, 57, 54, 950000), UTCDateTime(2022, 8, 23, 18, 2)), ('UW', 'DONK', '--', 'HHZ', UTCDateTime(2022, 8, 23, 16, 57, 54, 950000), UTCDateTime(2022, 8, 23, 18, 2)), ('UW', 'ALKI', '--', 'HNZ', UTCDateTime(2022, 8, 23, 16, 57, 54, 950000), UTCDateTime(2022, 8, 23, 18, 2))]
+Downloading http://service.iris.edu/fdsnws/dataselect/1/query with requesting gzip compression
+Sending along the following payload:
+----------------------------------------------------------------------
+UW DONK -- ENZ 2022-08-23T16:57:54.950000 2022-08-23T18:02:00.000000
+UW DONK -- HHZ 2022-08-23T16:57:54.950000 2022-08-23T18:02:00.000000
+UW ALKI -- HNZ 2022-08-23T16:57:54.950000 2022-08-23T18:02:00.000000
+----------------------------------------------------------------------
+Downloaded http://service.iris.edu/fdsnws/dataselect/1/query with HTTP code: 200
+Downloading http://service.iris.edu/fdsnws/station/1/query with requesting gzip compression
+Sending along the following payload:
+----------------------------------------------------------------------
+level=response
+UW DONK -- ENZ 2022-08-23T16:57:54.950000 2022-08-23T18:02:00.000000
+UW DONK -- HHZ 2022-08-23T16:57:54.950000 2022-08-23T18:02:00.000000
+UW ALKI -- HNZ 2022-08-23T16:57:54.950000 2022-08-23T18:02:00.000000
+----------------------------------------------------------------------
+Uncompressing gzipped response for http://service.iris.edu/fdsnws/station/1/query
+Downloaded http://service.iris.edu/fdsnws/station/1/query with HTTP code: 200
+TIME bulk download: 2.2851944910362363 sec  Nstreams: 5  Approx size: 1.4657049179077148 MB
+UW.ALKI.--.HNZ -1 -1 -1 0 -1 -1 -1 0 0 0 0.001767 0.0001322 329 -4812 15.73 -4976 -4647 339.06 3263.85 99.94 1    -1 -1 0 0.08283 0.01553           ------1 2.477318048477173e-07  1.2419735481962562 0.006278586049298178 0.00026757203991216444 0 0 0 0
+UW.DONK.--.ENZ -1 -1 -1 0 -1 -1 -1 0 0 0 0.0005046 0.0001172 28 1.356e+04 2.88 1.355e+04 1.358e+04 3605.06 3605.06 100 0    -1 -1 0 0.007977 0.001178           ------2 2.8312206268310547e-07  1.6019837632775307 0.0024322733487906287 0.00022388346814848628 0 0 0 0
+UW.DONK.--.HHZ -1 -1 -1 0 -1 -1 -1 0 0 0 0.0002507 2.21e-05 332 -433.7 38.11 -591 -259 333.47 3264.69 99.81 1    -1 -1 0 0.002426 0.0004212           ------3 3.1478703022003174e-07  1.9744741106405854 0.0021625706143575847 4.823054421786226e-05 0 0 0 0
